@@ -110,8 +110,8 @@ import org.chocosolver.util.tools.VariableUtils;
 
 import java.util.Arrays;
 import java.util.BitSet;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
+import java9.util.stream.IntStream;
+import java9.util.stream.Stream;
 
 import static java.lang.Math.abs;
 

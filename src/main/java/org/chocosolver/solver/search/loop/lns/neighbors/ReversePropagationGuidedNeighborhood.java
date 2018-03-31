@@ -8,14 +8,15 @@
  */
 package org.chocosolver.solver.search.loop.lns.neighbors;
 
+import java9.util.Comparators;
 import org.chocosolver.solver.Cause;
 import org.chocosolver.solver.exception.ContradictionException;
 import org.chocosolver.solver.search.strategy.decision.DecisionPath;
 import org.chocosolver.solver.variables.IntVar;
 
-import java.util.Comparator;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+
+import java9.util.stream.Collectors;
+import java9.util.stream.IntStream;
 
 /**
  * A Propagation Guided LNS
@@ -71,7 +72,7 @@ public class ReversePropagationGuidedNeighborhood extends PropagationGuidedNeigh
                 candidates = IntStream.range(0, n)
                         .filter(i -> fragment.get(i) && all[i] > 0)
                         .boxed()
-                        .sorted(Comparator.comparingInt(i -> all[i]))
+                        .sorted(Comparators.comparingInt(i -> all[i]))
                         .limit(listSize)
                         .collect(Collectors.toList());
                 logSum = 0;

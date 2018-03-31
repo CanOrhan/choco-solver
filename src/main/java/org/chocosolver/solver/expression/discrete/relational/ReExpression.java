@@ -23,8 +23,8 @@ import org.chocosolver.solver.variables.IntVar;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import java9.util.stream.Collectors;
+import java9.util.stream.IntStream;
 
 /**
  * relational expression

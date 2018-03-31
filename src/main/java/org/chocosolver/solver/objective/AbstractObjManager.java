@@ -11,8 +11,8 @@ package org.chocosolver.solver.objective;
 import org.chocosolver.solver.ResolutionPolicy;
 import org.chocosolver.solver.variables.Variable;
 
-import java.util.Objects;
-import java.util.function.Function;
+import java9.util.Objects;
+import java9.util.function.Function;
 
 /**
  * This class defines common methods to COP based on maximization or minimization of integer or real variable

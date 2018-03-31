@@ -16,7 +16,7 @@ import org.chocosolver.solver.variables.Variable;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.util.function.Function;
+import java9.util.function.Function;
 
 /**
  * Factory to create (mono-)objective managers.

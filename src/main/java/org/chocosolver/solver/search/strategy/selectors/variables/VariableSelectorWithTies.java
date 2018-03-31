@@ -8,11 +8,15 @@
  */
 package org.chocosolver.solver.search.strategy.selectors.variables;
 
+import java9.util.Lists;
+import java9.util.function.Predicate;
+import java9.util.stream.Stream;
+import java9.util.stream.StreamSupport;
 import org.chocosolver.solver.variables.Variable;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.stream.Collectors;
+import java9.util.stream.Collectors;
 
 /**
  * <br/>
@@ -39,7 +43,7 @@ public class VariableSelectorWithTies<V extends Variable> implements VariableSel
         newv.clear();
         Collections.addAll(oldv, variables);
         // 1. remove instantied variables
-        newv.addAll(oldv.stream().filter(v -> !v.isInstantiated()).collect(Collectors.toList()));
+        newv.addAll(StreamSupport.stream(oldv).filter(v -> !v.isInstantiated()).collect(Collectors.toList()));
         if (newv.size() == 0) return null;
 
         // Then apply each heuristic one by one

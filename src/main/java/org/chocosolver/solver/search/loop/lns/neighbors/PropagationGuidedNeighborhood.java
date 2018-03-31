@@ -19,11 +19,11 @@ import org.chocosolver.solver.variables.IntVar;
 
 import java.util.ArrayList;
 import java.util.BitSet;
-import java.util.Comparator;
+import java9.util.Comparators;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
+import java9.util.stream.Collectors;
+import java9.util.stream.IntStream;
 
 /**
  * A Propagation Guided LNS
@@ -182,7 +182,7 @@ public class PropagationGuidedNeighborhood implements INeighbor {
                 candidates = IntStream.range(0, n)
                         .filter(i -> fragment.get(i) && all[i] > 0)
                         .boxed()
-                        .sorted(Comparator.comparingInt(i -> all[i]))
+                        .sorted(Comparators.comparingInt(i -> all[i]))
                         .limit(listSize)
                         .collect(Collectors.toList());
             } else {

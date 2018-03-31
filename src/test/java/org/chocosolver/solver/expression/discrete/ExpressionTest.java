@@ -17,7 +17,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.stream.IntStream;
+import java9.util.stream.IntStream;
 
 /**
  *

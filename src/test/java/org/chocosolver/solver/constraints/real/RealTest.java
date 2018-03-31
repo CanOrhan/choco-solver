@@ -8,6 +8,7 @@
  */
 package org.chocosolver.solver.constraints.real;
 
+import java9.util.stream.StreamSupport;
 import org.chocosolver.solver.Model;
 import org.chocosolver.solver.Solver;
 import org.chocosolver.solver.constraints.Constraint;
@@ -27,7 +28,7 @@ import org.testng.annotations.Test;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Random;
-import java.util.stream.Collectors;
+import java9.util.stream.Collectors;
 
 import static java.lang.System.out;
 import static org.testng.Assert.assertEquals;
@@ -363,8 +364,8 @@ public class RealTest {
         model.setObjective(false, opt);
         model.getSolver().showStatistics();
         while (model.getSolver().solve()) {
-            System.out.println(Arrays.stream(rv1).map(x -> String.format("%.2f ", x.getUB())).collect(Collectors.toList()));
-            System.out.println(Arrays.stream(rv2).map(x -> String.format("%.2f ", x.getUB())).collect(Collectors.toList()));
+            System.out.println(StreamSupport.stream(Arrays.asList(rv1)).map(x -> String.format("%.2f ", x.getUB())).collect(Collectors.toList()));
+            System.out.println(StreamSupport.stream(Arrays.asList(rv2)).map(x -> String.format("%.2f ", x.getUB())).collect(Collectors.toList()));
         }
     }
 

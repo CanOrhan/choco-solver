@@ -14,8 +14,8 @@ import org.chocosolver.solver.search.SearchState;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.util.Objects;
-import java.util.function.LongSupplier;
+import java9.util.Objects;
+import java9.util.function.LongSupplier;
 
 /**
  * Object which stores resolution information to get statistics

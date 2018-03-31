@@ -12,7 +12,7 @@ import org.chocosolver.solver.ICause;
 import org.chocosolver.solver.exception.ContradictionException;
 import org.chocosolver.solver.variables.Variable;
 
-import java.util.function.Function;
+import java9.util.function.Function;
 
 /**
  * interface to monitor the bounds of the objective variable.

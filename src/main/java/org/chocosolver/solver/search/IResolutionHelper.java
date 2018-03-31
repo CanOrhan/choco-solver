@@ -24,11 +24,11 @@ import org.chocosolver.util.criteria.Criterion;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Spliterator;
-import java.util.function.BiConsumer;
-import java.util.function.Consumer;
-import java.util.stream.Stream;
-import java.util.stream.StreamSupport;
+import java9.util.Spliterator;
+import java9.util.function.BiConsumer;
+import java9.util.function.Consumer;
+import java9.util.stream.Stream;
+import java9.util.stream.StreamSupport;
 
 /**
  * Interface to define most commonly used resolution procedures.

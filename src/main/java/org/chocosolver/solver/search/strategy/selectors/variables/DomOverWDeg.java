@@ -22,7 +22,7 @@ import org.chocosolver.solver.search.strategy.strategy.AbstractStrategy;
 import org.chocosolver.solver.variables.IntVar;
 import org.chocosolver.util.objects.IntMap;
 
-import java.util.stream.Stream;
+import java9.util.stream.Stream;
 
 /**
  * Implementation of DowOverWDeg[1].

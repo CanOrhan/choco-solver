@@ -37,7 +37,7 @@ import org.chocosolver.solver.variables.Variable;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.function.Function;
+import java9.util.function.Function;
 
 /**
  * The <code>Model</code> is the header component of Constraint Programming.

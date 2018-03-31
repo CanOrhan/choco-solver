@@ -14,7 +14,7 @@ import org.chocosolver.solver.variables.RealVar;
 import org.chocosolver.solver.variables.Variable;
 
 import java.util.Arrays;
-import java.util.stream.IntStream;
+import java9.util.stream.IntStream;
 
 import static java.util.Arrays.stream;
 

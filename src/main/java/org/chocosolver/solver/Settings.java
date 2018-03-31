@@ -16,9 +16,9 @@ import org.chocosolver.solver.search.strategy.Search;
 import org.chocosolver.solver.search.strategy.strategy.AbstractStrategy;
 import org.chocosolver.solver.variables.IntVar;
 
-import java.util.function.Function;
-import java.util.function.IntPredicate;
-import java.util.function.Predicate;
+import java9.util.function.Function;
+import java9.util.function.IntPredicate;
+import java9.util.function.Predicate;
 
 
 /**
